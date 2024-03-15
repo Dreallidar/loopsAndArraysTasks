@@ -33,6 +33,14 @@ public class Main {
         System.out.println(augalai[i]);
     }
 
+        System.out.println("~~~~~~~~~~~~~~~~Task 5~~~~~~~~~~~~~~~~~~");
 
+        for (int i = 9; i < augalai.length; i--) {
+            System.out.println(augalai[i]);
+            if (i == 0) {
+                break;
+            }
+
+        }
 }
 }
