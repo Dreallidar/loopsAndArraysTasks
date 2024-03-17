@@ -110,6 +110,27 @@ public class Main {
         System.out.println("~~~~~~~~~Task 9~~~~~~~~~");
 
 
+        int shorter = 0;
+        int longer = 0;
+
+
+
+//        System.out.println(shorter + " " + longer);
+
+        for (int i = 0; i < augalai.length ; i++) {
+            if (augalai[i].length() > 7) longer++;
+            if (augalai[i].length() < 5) shorter++;
+
+        }
+        System.out.println("trumpesniu nei 5 yra " + shorter + " Ilgesniu nei 7 yra  " + longer);
+
+        System.out.println( "~~~~~~~~~~~ Task 10 ~~~~~~~~~~~~~~~~~~~~");
+
+
+
+
+
+
     }
 
 }
