@@ -47,7 +47,7 @@ public class Main {
         }
         System.out.println("~~~~~~~~~Task 5 Alternative~~~~~~~~~~");
 
-        for (int i = augalai.length -1; i >= 0; i--) {
+        for (int i = augalai.length - 1; i >= 0; i--) {
             System.out.println(augalai[i]);
         }
 
@@ -57,12 +57,40 @@ public class Main {
         System.out.println();
 
 
-        for (int y = 10; y <= 50 ; y+=2){
+        for (int y = 10; y <= 50; y += 2) {
             System.out.println(y);
 
         }
         System.out.println("~~~~~~~~Task 7~~~~~~~~~~~~~~~~");
 
+        for (int y = 10; y <= 50; y += 2) {
+            if (y == 10 ){
+                continue;
+            }
+            if (y == 20 ){
+                continue;
+            }
+            if (y == 30 ){
+                continue;
+            }
+            if (y == 40 ){
+                continue;
+            }
+            if (y == 50 ){
+                continue;
+            }
+
+            System.out.println(y);
+
+        }
+
+
+        System.out.println( "~~~~~~~~~~Task 8~~~~~~~~~~");
+
+
+
 
     }
+
+
 }
