@@ -64,33 +64,42 @@ public class Main {
         System.out.println("~~~~~~~~Task 7~~~~~~~~~~~~~~~~");
 
         for (int y = 10; y <= 50; y += 2) {
-            if (y == 10 ){
+            if (y == 10) {
                 continue;
             }
-            if (y == 20 ){
+            if (y == 20) {
                 continue;
             }
-            if (y == 30 ){
+            if (y == 30) {
                 continue;
             }
-            if (y == 40 ){
+            if (y == 40) {
                 continue;
             }
-            if (y == 50 ){
+            if (y == 50) {
                 continue;
             }
 
             System.out.println(y);
 
+
+
         }
+        System.out.println("~~~~~~task 7 B variation~~~~~~~~~~~");
+        for (int y = 10; y <= 50; y += 2) {
+            if (y != y % 10) {
+                continue;
+            }
+            System.out.println(y);
 
 
-        System.out.println( "~~~~~~~~~~Task 8~~~~~~~~~~");
 
 
+
+
+        } System.out.println("~~~~~~~~~~Task 8~~~~~~~~~~");
 
 
     }
-
 
 }
