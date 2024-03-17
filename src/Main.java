@@ -121,7 +121,30 @@ public class Main {
         }
         System.out.println("Ilgiai tarp 5 ir 10 simboliu " + between);
 
-        System.out.println( "~~~~~~All Easy tasks completed~~~~~");
+        System.out.println("~~~~~~All Easy tasks completed~~~~~");
+
+        System.out.println("~~~~~~~~~~~~~ 1st Hard Task~~~~~~~");
+
+        int max = 300;
+
+        String count2 = "";
+        int count150 = 0;
+        for (int i = 0; i <= 300; i++) {
+            int rng = (int) (Math.random() * max);
+            if (rng > 150) count150++;
+            if (rng > 275) {
+                count2 += "[" + rng + "] " ;
+
+            }else {
+                count2 += rng + " ";
+
+            }
+
+
+        }
+        System.out.println(count2);
+        System.out.println(" ");
+        System.out.println(count150 + " Skaiciu Virs 150");
 
 
     }
