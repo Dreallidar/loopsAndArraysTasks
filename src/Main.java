@@ -83,7 +83,6 @@ public class Main {
             System.out.println(y);
 
 
-
         }
         System.out.println("~~~~~~task 7 B variation~~~~~~~~~~~");
         for (int y = 10; y <= 50; y += 2) {
@@ -93,11 +92,22 @@ public class Main {
             System.out.println(y);
 
 
+        }
+        System.out.println("~~~~~~~~~~Task 8~~~~~~~~~~");
+
+        int count = -1;
+        for (int i = 0; i <= 20; i++) {
 
 
+            System.out.println(i);
+            if (i % 2 == 0) count++;
 
 
-        } System.out.println("~~~~~~~~~~Task 8~~~~~~~~~~");
+        }
+        System.out.println("Kintamasis i buvo porinis " + count + " Kartu ");
+
+
+        System.out.println("~~~~~~~~~Task 9~~~~~~~~~");
 
 
     }
