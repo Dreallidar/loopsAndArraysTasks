@@ -1,3 +1,5 @@
+import java.sql.SQLOutput;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("~~~~~~~~~~Task 1~~~~~~~~~~~~~");
@@ -30,8 +32,8 @@ public class Main {
 
 
         for (int i = 0; i < augalai.length; i++) {
-        System.out.println(augalai[i]);
-    }
+            System.out.println(augalai[i]);
+        }
 
         System.out.println("~~~~~~~~~~~~~~~~Task 5~~~~~~~~~~~~~~~~~~");
 
@@ -41,6 +43,26 @@ public class Main {
                 break;
             }
 
+
         }
-}
+        System.out.println("~~~~~~~~~Task 5 Alternative~~~~~~~~~~");
+
+        for (int i = augalai.length -1; i >= 0; i--) {
+            System.out.println(augalai[i]);
+        }
+
+
+        System.out.println("~~~~~~~~~~~~~~Task 6 ~~~~~~~~~~~~");
+
+        System.out.println();
+
+
+        for (int y = 10; y <= 50 ; y+=2){
+            System.out.println(y);
+
+        }
+        System.out.println("~~~~~~~~Task 7~~~~~~~~~~~~~~~~");
+
+
+    }
 }
