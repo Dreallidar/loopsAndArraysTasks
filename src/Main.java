@@ -12,7 +12,6 @@ public class Main {
         for (int i = 1; i < 10; i++) {
             System.out.println(i);
         }
-
         System.out.println("~~~~~~~~~~~~~~~~Task 3~~~~~~~~~~~~~~~~~~");
 
         String[] augalai = new String[10];
@@ -30,7 +29,6 @@ public class Main {
 
         System.out.println("~~~~~~~~~~~~~~~~Task 4~~~~~~~~~~~~~~~~~~");
 
-
         for (int i = 0; i < augalai.length; i++) {
             System.out.println(augalai[i]);
         }
@@ -43,7 +41,6 @@ public class Main {
                 break;
             }
 
-
         }
         System.out.println("~~~~~~~~~Task 5 Alternative~~~~~~~~~~");
 
@@ -51,11 +48,9 @@ public class Main {
             System.out.println(augalai[i]);
         }
 
-
         System.out.println("~~~~~~~~~~~~~~Task 6 ~~~~~~~~~~~~");
 
         System.out.println();
-
 
         for (int y = 10; y <= 50; y += 2) {
             System.out.println(y);
@@ -82,7 +77,6 @@ public class Main {
 
             System.out.println(y);
 
-
         }
         System.out.println("~~~~~~task 7 B variation~~~~~~~~~~~");
         for (int y = 10; y <= 50; y += 2) {
@@ -90,7 +84,6 @@ public class Main {
                 continue;
             }
             System.out.println(y);
-
 
         }
         System.out.println("~~~~~~~~~~Task 8~~~~~~~~~~");
@@ -102,33 +95,33 @@ public class Main {
             System.out.println(i);
             if (i % 2 == 0) count++;
 
-
         }
         System.out.println("Kintamasis i buvo porinis " + count + " Kartu ");
 
 
         System.out.println("~~~~~~~~~Task 9~~~~~~~~~");
 
-
         int shorter = 0;
         int longer = 0;
 
 
-
 //        System.out.println(shorter + " " + longer);
 
-        for (int i = 0; i < augalai.length ; i++) {
+        for (int i = 0; i < augalai.length; i++) {
             if (augalai[i].length() > 7) longer++;
             if (augalai[i].length() < 5) shorter++;
 
         }
         System.out.println("trumpesniu nei 5 yra " + shorter + " Ilgesniu nei 7 yra  " + longer);
 
-        System.out.println( "~~~~~~~~~~~ Task 10 ~~~~~~~~~~~~~~~~~~~~");
+        System.out.println("~~~~~~~~~~~ Task 10 ~~~~~~~~~~~~~~~~~~~~");
+        int between = 0;
+        for (int i = 0; i < augalai.length; i++) {
+            if (augalai[i].length() > 5 && augalai[i].length() < 10) between++;
+        }
+        System.out.println("Ilgiai tarp 5 ir 10 simboliu " + between);
 
-
-
-
+        System.out.println( "~~~~~~All Easy tasks completed~~~~~");
 
 
     }
