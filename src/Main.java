@@ -80,7 +80,7 @@ public class Main {
         }
         System.out.println("~~~~~~task 7 B variation~~~~~~~~~~~");
         for (int y = 10; y <= 50; y += 2) {
-            if ( y % 10 == 0) {
+            if (y % 10 == 0) {
                 continue;
             }
             System.out.println(y);
@@ -156,11 +156,11 @@ public class Main {
                 solution += i + ",";
             }
         }
-        System.out.println(solution.substring(0,solution.length() -1));
+        System.out.println(solution.substring(0, solution.length() - 1));
         System.out.println();
 
         for (int i = 1; i <= 3000; i++) {
-            if( i == 3000 / 77 * 77){
+            if (i == 3000 / 77 * 77) {
                 System.out.print(i);
                 continue;
             }
@@ -171,10 +171,10 @@ public class Main {
         System.out.println();
 
         solution = "";
-        for (int i = 77; i <= 3000; i+=77) {
-                solution += i + ",";
+        for (int i = 77; i <= 3000; i += 77) {
+            solution += i + ",";
         }
-        System.out.println(solution.substring(0,solution.length() -1));
+        System.out.println(solution.substring(0, solution.length() - 1));
         System.out.println("~~~~~~~ Hard task 3~~~~~~~~~~");
 
 
@@ -188,12 +188,62 @@ public class Main {
 
         }
         System.out.println("~~~~~~~~~~~~~~Hard task 4~~~~~~~~~~~~~~");
+        for (int i = 0; i < 25; i++) {
+            for (int j = 0; j < 25; j++) {
+                if (i == j || 25 - i - 1 == j) {
+                    System.out.print(" x");
+                } else {
+                    System.out.print(" *");
+                }
+            }
+            System.out.println();
+        }
+        System.out.println("~~~~~~~~~ Hard task 5~~~~~~~~~~~~");
+
+        System.out.println("~~ A ~~");
+        while (true) {
+            int coin = (int) Math.round(Math.random());
+            if (coin == 1) {
+                System.out.println("S");
+            }
+            if (coin == 0) {
+                System.out.println("H");
+                break;
+
+            }
+        }
+        System.out.println("~~ B ~~");
+        int hcount = 0;
+        while (true) {
+            int coin = (int) Math.round(Math.random());
+            if (coin == 1) {
+                System.out.println("S");
+            }
+            if (coin == 0) {
+                hcount++;
+                System.out.println("H");
+            }
+            if (hcount == 3) {
+                break;
+            }
+        }
+        System.out.println("~~ C ~~");
+        hcount = 0;
+        while (true) {
+            int coin = (int) Math.round(Math.random());
+            if (coin == 1) {
+                System.out.println("S");
+            }
+            if (coin == 0) {
+                hcount++;
+                System.out.println("H");
+            }
+            if (hcount == 3) {
+                break;
+            }
 
 
-
-
-
+        }
 
     }
-
 }
