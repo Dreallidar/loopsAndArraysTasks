@@ -80,7 +80,7 @@ public class Main {
         }
         System.out.println("~~~~~~task 7 B variation~~~~~~~~~~~");
         for (int y = 10; y <= 50; y += 2) {
-            if (y != y % 10) {
+            if ( y % 10 == 0) {
                 continue;
             }
             System.out.println(y);
@@ -88,7 +88,7 @@ public class Main {
         }
         System.out.println("~~~~~~~~~~Task 8~~~~~~~~~~");
 
-        int count = -1;
+        int count = 0;
         for (int i = 0; i <= 20; i++) {
 
 
@@ -133,9 +133,9 @@ public class Main {
             int rng = (int) (Math.random() * max);
             if (rng > 150) count150++;
             if (rng > 275) {
-                count2 += "[" + rng + "] " ;
+                count2 += "[" + rng + "] ";
 
-            }else {
+            } else {
                 count2 += rng + " ";
 
             }
@@ -145,6 +145,53 @@ public class Main {
         System.out.println(count2);
         System.out.println(" ");
         System.out.println(count150 + " Skaiciu Virs 150");
+
+        System.out.println("~~~~~~~~~~ Hard task 2~~~~~~~~~~~");
+        String solution = "";
+
+
+        for (int i = 1; i <= 3000; i++) {
+            if (i % 77 == 0) {
+//                System.out.print("," + i);
+                solution += i + ",";
+            }
+        }
+        System.out.println(solution.substring(0,solution.length() -1));
+        System.out.println();
+
+        for (int i = 1; i <= 3000; i++) {
+            if( i == 3000 / 77 * 77){
+                System.out.print(i);
+                continue;
+            }
+            if (i % 77 == 0) {
+                System.out.print(i + ",");
+            }
+        }
+        System.out.println();
+
+        solution = "";
+        for (int i = 77; i <= 3000; i+=77) {
+                solution += i + ",";
+        }
+        System.out.println(solution.substring(0,solution.length() -1));
+        System.out.println("~~~~~~~ Hard task 3~~~~~~~~~~");
+
+
+        for (int i = 0; i < 25; i++) {
+            for (int j = 0; j <= 25; j++) {
+                System.out.print(" *");
+            }
+            if (i <= 25) {
+                System.out.println("");
+            }
+
+        }
+        System.out.println("~~~~~~~~~~~~~~Hard task 4~~~~~~~~~~~~~~");
+
+
+
+
 
 
     }
