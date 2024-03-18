@@ -232,16 +232,17 @@ public class Main {
         while (true) {
             int coin = (int) Math.round(Math.random());
             if (coin == 1) {
+                hcount = 0;
                 System.out.println("S");
             }
             if (coin == 0) {
                 hcount++;
                 System.out.println("H");
+
             }
             if (hcount == 3) {
                 break;
             }
-
 
         }
 
