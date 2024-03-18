@@ -245,6 +245,38 @@ public class Main {
             }
 
         }
+        System.out.println("~~~~~~~~~~~~~~~Hard task 6~~~~~~~~~~~");
+        String Petras = " Petras gavo tasku  ";
+        String Kazys = " Kazys gavo tasku ";
+        int min = 0;
 
+        int petroTaskai = 0;
+        int kazioTaskai = 0;
+        while (true) {
+            min = 10;
+            max = 20;
+            petroTaskai += min + Math.round(Math.random() * (max - min));
+            System.out.print(petroTaskai + Petras);
+            min = 5;
+            max = 25;
+            kazioTaskai += min + Math.round(Math.random() * (max - min));
+            System.out.println(kazioTaskai + Kazys);
+            if (petroTaskai >= 222 && kazioTaskai >= 222) {
+                System.out.println(petroTaskai + " Lygiosios");
+                break;
+
+
+            }
+            if (petroTaskai >= 222) {
+                System.out.println(petroTaskai + " Matcha laimejo Petras");
+                break;
+            }
+            if (kazioTaskai >= 222) {
+                System.out.println(kazioTaskai + " Matcha laimejo Kazys");
+                break;
+            }
+
+
+        }
     }
 }
